@@ -127,6 +127,10 @@ func (ctx *context) Given(items ...interface{}) {
 	Convey(items)
 }
 
+func (ctx *context) When(items ...interface{}) {
+	Convey(items)
+}
+
 func (ctx *context) Convey(items ...interface{}) {
 	entry := discover(items)
 
