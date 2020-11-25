@@ -123,6 +123,10 @@ func (ctx *context) FocusConvey(items ...interface{}) {
 	ctx.Convey(items, focusConvey)
 }
 
+func (ctx *context) Given(items ...interface{}) {
+	Convey(items)
+}
+
 func (ctx *context) Convey(items ...interface{}) {
 	entry := discover(items)
 
